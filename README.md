@@ -1,6 +1,6 @@
 # webcity
 
-Aplicação desenvolvida para cadastrar cidades.<br> 
+Aplicação desenvolvida para cadastrar cidades.
 **Tecnologias utilizadas:**
 - **Java 8;**
 - **Spring Boot;**
