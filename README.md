@@ -1,8 +1,8 @@
 # webcity
 
 Aplicação desenvolvida para cadastrar cidades.
-**Tecnologias utilizadas:**
-Java 8;
-Spring Boot;
-Thymeleaf;
-MYSQL
+**Tecnologias utilizadas:** <br>
+*Java 8;
+*Spring Boot;
+*Thymeleaf;
+*MYSQL
