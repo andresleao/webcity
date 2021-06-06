@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+layout:decorator="layout">
+	
+	<th:block layout:fragment="content">
+		<a th:href="@{/cities/new}" class="btn btn-primary">Create</a>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="city : ${cities}">
+					<td th:text="${city.id}"></td>
+					<td th:text="${city.name}"></td>
+					<td>
+						<a th:href="@{/cities/{id}(id = ${city.id})}" class="btn btn-small btn-info">Edit</a>
+						<form th:action="@{/cities/{id}(id = ${city.id})}" th:method="delete" style="display: inline-block;">
+							<button type="submit" class="btn btn-small btn-danger">Delete</button>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</th:block>
+</html>
