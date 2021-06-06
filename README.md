@@ -5,4 +5,5 @@ Aplicação desenvolvida para cadastrar cidades.<br>
 - **Java 8;**
 - **Spring Boot;**
 - **Thymeleaf;**
+- **Bootstrap;**
 - **Banco de Dados Relacional MYSQL.**
